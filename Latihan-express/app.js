@@ -13,4 +13,5 @@ app.use(web)
 
 app.listen(3000, () => {
     console.log('Aplikasi berjalan di http://localhost:3000');
+
 })
