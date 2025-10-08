@@ -1,27 +1,21 @@
 {
-  "name": "expressjs-si52-2025-2026-meilisaapriyani",
+  "name": "pengenalan-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-MeilisaApriyani.git"
-  },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-MeilisaApriyani/issues"
-  },
-  "homepage": "https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-MeilisaApriyani#readme",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "mongoose": "^8.18.3",
+    "mongoose": "^8.18.3"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }

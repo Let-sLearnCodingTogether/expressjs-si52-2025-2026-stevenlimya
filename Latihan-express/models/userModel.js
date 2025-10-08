@@ -1,4 +1,4 @@
-import mongoose from  "mongoose"
+import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
     {
@@ -10,21 +10,20 @@ const UserSchema = new mongoose.Schema(
         },
         email : {
             type : String,
-            required : [true, "Email name wajib di isi"],
+            required : [true, "Email wajib di isi"],
             unique : true,
             trim : true
         },
         password : {
             type : String,
-            required : [true, "Password name wajib di isi"]
-        }
+            required : [true, "Password wajib di isi"],
+        },
     },
     {
         timestamps : true
     }
-
 )
 
-const UserModel = mongoose.Model("User", UserSchema)
+const UserModel = mongoose.model("User", UserSchema)
 
 export default UserModel
