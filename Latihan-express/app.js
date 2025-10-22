@@ -19,9 +19,6 @@ app.set('view engine', 'ejs')
 app.use(web)
 app.use("/api", api)
 
-app.get('/', (res, req) =>{
-    
-})
 
 app.listen("3000", () => {
     database()

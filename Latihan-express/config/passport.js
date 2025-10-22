@@ -1,5 +1,5 @@
 import passport from "passport";
-import {ExtractJwt, Strategy} from "passport-jwt";
+import { ExtractJwt, Strategy} from "passport-jwt";
 import userModel from "../models/userModel.js";
 
 const opts = {
@@ -10,7 +10,7 @@ const opts = {
 passport.use(
     new Strategy(opts, async (payload, done) => {
         try {
-            const user = await userModel.findById({
+            const user = await userModel.findOne({
                 email : payload.email
             })
             if(!user){
